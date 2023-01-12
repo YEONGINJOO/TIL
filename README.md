@@ -41,3 +41,56 @@
    - 3개 이상만 적으면 똑같이 작용
 
 참고자료 https://www.markdownguide.org/cheat-sheet/
+
+
+> # Git/Github
+## 1. Git 개념
+* 분산버전 관리시스템
+* 코드의 히스토리(버전)를(을) 관리하는 도구
+* 개발되어온 과정 파악가능
+* 이전버전과의 변경사항 비교 및 분석
+ 
+## 2. 작성방법 및 활용
+
+# Git 기본기
+
+## 1. readme.md
+  - 프로젝트에 대한 설명 문서
+  - github 프로젝트에서 가장 먼저 보는 문서
+  - 일반적으로 소프트웨어와 함께 배포
+  - 작성 형식은 따로 없으나, 일반적으로 마크다운을 이용해 작성
+
+## 2. repository
+  - 특정 디렉토리를 버전 관리하는 저장소
+  - git init 명령어로 로컬 저장소를 생성
+  - .git 디렉토리에 버전 관리에 필요한 모든 것이 들어있음(.이 있으면 숨김파일이 된다.)
+  - ~/Desktop/git_test (master) 이 디렉토리가 git으로 관리 된다는것을 나타낸다.
+
+## 3. 특정버전으로 남긴다 = 커밋(commit)한다(3가지 영역을 바탕으로 동작)
+
+  - working directory - 작업영역(실제로 작업하는 위치 )
+  - staging area - commit으로 남기고 싶은 내용
+  - repository - commit을 만들면 저장되는 곳
+## 순서 흐름 및 명령어
+  - working directory -> staging area 
+  - git add: working -> staging
+  - staging area -> repository
+  - git commit : staging area -> repository
+  - git status : 현재 상태 확인
+
+  - github(remote repository)
+  - git branch -M main -> master를 -> main으로 바꿔주는 명령어(master, main 확인 잘 하기)
+
+  - git push -> online으로 올려주는것
+
+  - bash에서 q가 종료의 약자이므로 q를 눌러볼것
+  - 잘못눌러서 unix로 들어갔을 때 esc로 누르면 명령모드로 바뀐다 :q!입력하면 탈출 가능하다.
+
+  - 저장 ->  add -> commit ->push
+
+  - 클론과 다운로드의 차이로 다운로드는 이력을 가지고 오지않는다. 
+
+  * git hub repo
+  * Local Repo
+  * 파일 수정
+  * Commit - git init이 필요없음
